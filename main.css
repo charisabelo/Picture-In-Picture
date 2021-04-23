@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "jaldi";
+  src: url(fonts/Jaldi/Jaldi-Regular.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: "jaldiBold";
+  src: url(fonts/Jaldi/Jaldi-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "robotoLight";
+  src: url(/fonts/Roboto/Roboto-Light.ttf);
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container .button {
+  display: flex;
+  overflow: hidden;
+  letter-spacing: 0.3rem;
+  padding: 3rem 9rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  transition: all 150ms linear;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  text-transform: none;
+  text-transform: capitalize;
+  color: #fff;
+  border: 0 none;
+  border-radius: 8rem;
+  font-size: 5rem;
+  font-weight: 500;
+  line-height: 1.3;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 160px;
+  box-shadow: 3px 5px 10px #d1d0d0;
+}
+.button-container .button:hover {
+  transition: all 150ms linear;
+  opacity: 0.85;
+}
+.button-container .button:active {
+  transition: all 150ms linear;
+  opacity: 0.75;
+}
+.button-container .button:focus {
+  outline: 1px dotted #959595;
+  outline-offset: -4px;
+}
+.button-container .button.-regular {
+  font-weight: 700;
+  outline: none;
+  color: #202129;
+  background-color: #f2f2f2;
+}
+.button-container .button.-regular:hover {
+  color: #202129;
+  background-color: #e1e2e2;
+  opacity: 1;
+}
+.button-container .button.-regular:active {
+  background-color: #d5d6d6;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 700px) {
+  .button-container .button {
+    font-size: 3.5rem;
+    letter-spacing: 0.2rem;
+    padding: 2rem 8rem;
+  }
+}/*# sourceMappingURL=main.css.map */
